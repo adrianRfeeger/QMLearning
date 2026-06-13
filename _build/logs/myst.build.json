@@ -1,0 +1,31 @@
+{
+  "input": {
+    "files": [
+      "/tmp/qmlearning_build_src"
+    ],
+    "opts": {
+      "execute": false,
+      "executeParallel": 17,
+      "pdf": false,
+      "tex": false,
+      "typst": false,
+      "docx": false,
+      "md": false,
+      "xml": false,
+      "meca": false,
+      "cff": false,
+      "site": true,
+      "html": false,
+      "all": false,
+      "doiBib": false,
+      "watch": false,
+      "force": false,
+      "checkLinks": false,
+      "strict": true,
+      "ci": false,
+      "maxSizeWebp": 1572864,
+      "keepHost": false
+    }
+  },
+  "exports": []
+}

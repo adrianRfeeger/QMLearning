@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Bloch sphere qubit states</title>
+  <desc id="desc">A Bloch sphere showing the computational states, equator states, and the parameters theta and phi for a single qubit.</desc>
+  <defs>
+    <radialGradient id="sphere" cx="40%" cy="32%" r="66%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.6" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#93c5fd"/>
+    </radialGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#0f172a"/>
+    </marker>
+    <style>
+      .label { font: 750 25px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .small { font: 500 18px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+      .ket { font: 750 24px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #111827; }
+      .eq { font: 650 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #334155; }
+    </style>
+  </defs>
+  <rect width="900" height="700" rx="32" fill="#f8fafc"/>
+  <text x="55" y="68" class="label">A qubit as a point on the Bloch sphere</text>
+  <text x="55" y="101" class="small">The amplitudes set latitude; the relative phase sets longitude.</text>
+
+  <g transform="translate(445 350)">
+    <circle r="230" fill="url(#sphere)" stroke="#1d4ed8" stroke-width="3" opacity="0.92"/>
+    <ellipse rx="230" ry="64" fill="none" stroke="#2563eb" stroke-width="3" opacity="0.7"/>
+    <ellipse rx="230" ry="64" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.45" transform="rotate(90)"/>
+    <ellipse rx="230" ry="64" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.45" transform="rotate(30)"/>
+    <ellipse rx="230" ry="64" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.45" transform="rotate(-30)"/>
+
+    <line x1="0" y1="0" x2="0" y2="-220" stroke="#0f172a" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="0" y1="0" x2="275" y2="0" stroke="#0f172a" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="0" y1="0" x2="-190" y2="150" stroke="#0f172a" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="35" y="-232" class="ket">Z</text>
+    <text x="288" y="8" class="ket">X</text>
+    <text x="-222" y="178" class="ket">Y</text>
+
+    <line x1="0" y1="0" x2="164" y2="-122" stroke="#16a34a" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <circle cx="164" cy="-122" r="10" fill="#16a34a"/>
+    <path d="M 0 -86 A 86 86 0 0 1 62 -60" fill="none" stroke="#f59e0b" stroke-width="5"/>
+    <text x="38" y="-98" class="eq">theta</text>
+    <path d="M 60 0 A 88 88 0 0 0 35 55" fill="none" stroke="#dc2626" stroke-width="5"/>
+    <text x="75" y="52" class="eq">phi</text>
+
+    <text x="-88" y="-200" class="ket">|0&gt;</text>
+    <text x="-25" y="268" class="ket">|1&gt;</text>
+    <text x="236" y="-18" class="ket">|+&gt;</text>
+    <text x="-267" y="192" class="ket">|+i&gt;</text>
+    <text x="176" y="-142" class="ket">|psi&gt;</text>
+  </g>
+
+  <g transform="translate(55 555)">
+    <rect x="0" y="0" width="790" height="92" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="28" y="38" class="eq">|psi&gt; = cos(theta/2)|0&gt; + exp(i phi) sin(theta/2)|1&gt;</text>
+    <text x="28" y="68" class="small">Measurement in the Z basis gives P(0) = cos^2(theta/2) and P(1) = sin^2(theta/2).</text>
+  </g>
+</svg>

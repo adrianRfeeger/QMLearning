@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Quantum algorithm flow</title>
+  <desc id="desc">A four-step flow showing superposition, oracle phase marking, interference, and measurement.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#334155"/>
+    </marker>
+    <style>
+      .label { font: 760 25px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .small { font: 500 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+      .mono { font: 650 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #334155; }
+    </style>
+  </defs>
+  <rect width="1200" height="500" rx="34" fill="#f8fafc"/>
+  <text x="60" y="68" class="label">The pattern behind many quantum algorithms</text>
+  <text x="60" y="100" class="small">Prepare amplitudes, mark useful structure, interfere, then measure.</text>
+
+  <g transform="translate(60 155)">
+    <rect width="230" height="235" rx="26" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <text x="115" y="44" text-anchor="middle" class="label">1. Superpose</text>
+    <g transform="translate(38 78)" fill="#2563eb">
+      <rect x="0" y="68" width="20" height="48" rx="6"/>
+      <rect x="34" y="44" width="20" height="72" rx="6"/>
+      <rect x="68" y="28" width="20" height="88" rx="6"/>
+      <rect x="102" y="44" width="20" height="72" rx="6"/>
+      <rect x="136" y="68" width="20" height="48" rx="6"/>
+    </g>
+    <text x="115" y="220" text-anchor="middle" class="small">all candidate states</text>
+  </g>
+
+  <line x1="304" y1="272" x2="388" y2="272" stroke="#334155" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g transform="translate(405 155)">
+    <rect width="230" height="235" rx="26" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+    <text x="115" y="44" text-anchor="middle" class="label">2. Mark</text>
+    <text x="115" y="90" text-anchor="middle" class="mono">oracle</text>
+    <path d="M 55 142 h120" stroke="#92400e" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 115 94 v96" stroke="#92400e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="115" cy="142" r="36" fill="#ffffff" stroke="#f59e0b" stroke-width="4"/>
+    <text x="115" y="150" text-anchor="middle" class="mono">-1</text>
+    <text x="115" y="210" text-anchor="middle" class="small">phase marks the answer</text>
+  </g>
+
+  <line x1="649" y1="272" x2="733" y2="272" stroke="#334155" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g transform="translate(750 155)">
+    <rect width="230" height="235" rx="26" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+    <text x="115" y="44" text-anchor="middle" class="label">3. Interfere</text>
+    <path d="M 50 160 C 78 78 106 232 135 150 S 170 88 185 132" fill="none" stroke="#7c3aed" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 52 148 C 80 232 106 78 135 160 S 170 214 186 170" fill="none" stroke="#22c55e" stroke-width="7" stroke-linecap="round"/>
+    <text x="115" y="210" text-anchor="middle" class="small">cancel wrong paths</text>
+  </g>
+
+  <line x1="994" y1="272" x2="1074" y2="272" stroke="#334155" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1080 155)">
+    <rect width="90" height="235" rx="26" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+    <text x="45" y="44" text-anchor="middle" class="label">4</text>
+    <circle cx="45" cy="112" r="28" fill="#ffffff" stroke="#dc2626" stroke-width="4"/>
+    <path d="M 45 112 L 66 92" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/>
+    <rect x="21" y="161" width="48" height="12" rx="6" fill="#dc2626"/>
+    <rect x="29" y="184" width="32" height="12" rx="6" fill="#dc2626" opacity="0.55"/>
+    <text x="45" y="218" text-anchor="middle" class="small">measure</text>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Double-slit interference diagram</title>
+  <desc id="desc">Particles pass through a double slit and build an interference pattern on a screen from many single detections.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+    <style>
+      .label { font: 750 25px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .small { font: 500 18px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+      .mono { font: 650 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #334155; }
+    </style>
+  </defs>
+  <rect width="1200" height="620" rx="34" fill="url(#bg)"/>
+  <text x="70" y="72" class="label">Double-slit experiment: particle hits, wave pattern</text>
+  <text x="70" y="106" class="small">Single detections look particle-like; accumulated statistics reveal interference.</text>
+
+  <g>
+    <circle cx="105" cy="310" r="36" fill="#2563eb"/>
+    <circle cx="105" cy="310" r="13" fill="#dbeafe"/>
+    <text x="105" y="380" text-anchor="middle" class="label">source</text>
+    <text x="105" y="410" text-anchor="middle" class="small">one particle at a time</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="3" fill="none" opacity="0.55">
+    <path d="M 155 310 C 230 260 290 260 350 284"/>
+    <path d="M 155 310 C 230 310 290 310 350 310"/>
+    <path d="M 155 310 C 230 360 290 360 350 336"/>
+  </g>
+
+  <g>
+    <rect x="395" y="115" width="52" height="390" rx="10" fill="#111827"/>
+    <rect x="395" y="241" width="52" height="48" fill="#f8fafc"/>
+    <rect x="395" y="331" width="52" height="48" fill="#f8fafc"/>
+    <text x="421" y="540" text-anchor="middle" class="label">two slits</text>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M 456 265 C 535 203 621 180 718 169" stroke="#7c3aed" stroke-width="4" opacity="0.75"/>
+    <path d="M 456 265 C 541 254 619 251 718 263" stroke="#7c3aed" stroke-width="4" opacity="0.75"/>
+    <path d="M 456 265 C 535 335 620 377 718 408" stroke="#7c3aed" stroke-width="4" opacity="0.75"/>
+    <path d="M 456 355 C 535 420 621 447 718 460" stroke="#0ea5e9" stroke-width="4" opacity="0.75"/>
+    <path d="M 456 355 C 542 354 625 349 718 338" stroke="#0ea5e9" stroke-width="4" opacity="0.75"/>
+    <path d="M 456 355 C 535 288 620 246 718 214" stroke="#0ea5e9" stroke-width="4" opacity="0.75"/>
+  </g>
+
+  <g>
+    <rect x="835" y="110" width="45" height="400" rx="16" fill="#334155"/>
+    <g opacity="0.95">
+      <rect x="890" y="126" width="130" height="24" rx="12" fill="#fde68a"/>
+      <rect x="890" y="175" width="95" height="16" rx="8" fill="#cbd5e1"/>
+      <rect x="890" y="219" width="126" height="25" rx="12" fill="#fde68a"/>
+      <rect x="890" y="275" width="70" height="15" rx="8" fill="#cbd5e1"/>
+      <rect x="890" y="311" width="140" height="28" rx="14" fill="#fde68a"/>
+      <rect x="890" y="371" width="92" height="16" rx="8" fill="#cbd5e1"/>
+      <rect x="890" y="424" width="120" height="24" rx="12" fill="#fde68a"/>
+      <rect x="890" y="472" width="80" height="15" rx="8" fill="#cbd5e1"/>
+    </g>
+    <text x="858" y="548" text-anchor="middle" class="label">screen</text>
+    <text x="958" y="580" text-anchor="middle" class="small">bright and dark bands</text>
+  </g>
+
+  <g fill="#dc2626" opacity="0.88">
+    <circle cx="935" cy="136" r="4"/>
+    <circle cx="972" cy="137" r="3.5"/>
+    <circle cx="1002" cy="139" r="4"/>
+    <circle cx="928" cy="230" r="4"/>
+    <circle cx="965" cy="229" r="3.5"/>
+    <circle cx="999" cy="231" r="4"/>
+    <circle cx="918" cy="326" r="4"/>
+    <circle cx="948" cy="325" r="4"/>
+    <circle cx="981" cy="326" r="3.5"/>
+    <circle cx="1018" cy="327" r="4"/>
+    <circle cx="931" cy="435" r="4"/>
+    <circle cx="973" cy="436" r="3.5"/>
+    <circle cx="1008" cy="433" r="4"/>
+  </g>
+
+  <g>
+    <path d="M 305 155 h310" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="460" y="145" text-anchor="middle" class="mono">probability amplitudes interfere</text>
+    <path d="M 705 155 h165" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 62a46ba6-e49d-41de-9afc-004348296b6f
+  jupyter: true
+  title: Quantum Mechanics for Beginners
+  description: A beginner-friendly introduction to Quantum Mechanics with interactive examples.
+  keywords: [quantum mechanics, physics, beginner, jupyter book]
+  authors: 
+    - name: Adrian Feeger
+  toc:
+    - file: index.md
+    - file: 00_welcome_and_setup.md
+    - file: ch01_introduction.md
+      children:
+        - file: exercises_ch01.md
+    - file: ch02_01_numbers_algebra.ipynb
+    - file: ch02_02_functions_trigonometry.ipynb
+    - file: ch02_03_probability_complex.ipynb
+    - file: ch02_04_linear_algebra.ipynb
+      children:
+        - file: exercises_ch02.md
+    - file: ch03_wave_mechanics.ipynb
+      children:
+        - file: exercises_ch03.md
+    - file: ch04_spin_qubits.ipynb
+      children:
+        - file: exercises_ch04.md
+    - file: ch05_entanglement.md
+      children:
+        - file: exercises_ch05.md
+    - file: ch06_quantum_algorithms.ipynb
+      children:
+        - file: exercises_ch06.md
+    - file: glossary.md
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
